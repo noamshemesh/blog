@@ -14,8 +14,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My Life as a Developer">
 <meta name="twitter:description">
-  
-    <link rel="alternative" href="/atom.xml" title="My Life as a Developer" type="application/atom+xml">
+<meta name="twitter:creator" content="@[object Object]">
   
   
     <link rel="icon" href="/favicon.png">
@@ -23,6 +22,18 @@
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-52398580-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
   <div id="container">
@@ -46,12 +57,10 @@
         
           <a class="main-nav-link" href="/">Home</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link" href="/about">About</a>
         
       </nav>
       <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
@@ -64,12 +73,16 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-integration-coverage-istanbul" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/07/07/hello-world/" class="article-date">
-  <time datetime="2014-07-06T21:03:37.000Z" itemprop="datePublished">07 07 2014</time>
+    <a href="/2014/07/05/integration-coverage-istanbul/" class="article-date">
+  <time datetime="2014-07-05T11:20:13.000Z" itemprop="datePublished">05 07 2014</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Nodejs/">Node.js</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -78,7 +91,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/07/07/hello-world/">Hello World</a>
+      <a class="article-title" href="/2014/07/05/integration-coverage-istanbul/">Javascript Integration Tests Coverage With Istanbul</a>
     </h1>
   
 
@@ -86,37 +99,259 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo new <span class="string">"My New Post"</span>
-</pre></td></tr></table></figure>
+        <p>We’ve all heard about the importance of tests. Especially in javascript when even a minor code refactoring is becoming an issue because of the dynamic nature of the language.</p>
+<p>But even if the project has a lot of tests, we’re not sure if every line in the code is covered. That’s where coverage tools come in handy.</p>
+<p>What is the problem then? While running coverage for unit tests is pretty easy and works out of the box (e.g. <a href="http://blanketjs.org" title="Blanket.js" target="_blank" rel="external">blanket.js</a>), coverage for integration tests is a bit harder, because the tool doesn’t know what is the code that is being tested.</p>
+<p>
+        
+          <p class="article-more-link">
+            <a href="/2014/07/05/integration-coverage-istanbul/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://noamsh.com/2014/07/05/integration-coverage-istanbul/" data-id="kgfqeolizxiaknns" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo server
-</pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo generate
-</pre></td></tr></table></figure>
+  
+    <article id="post-how-to-create-a-data-cluster-and-live-through-it" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/13/how-to-create-a-data-cluster-and-live-through-it/" class="article-date">
+  <time datetime="2014-06-13T15:17:01.000Z" itemprop="datePublished">13 06 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Nodejs/">Node.js</a>
+  </div>
 
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo deploy
-</pre></td></tr></table></figure>
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/06/13/how-to-create-a-data-cluster-and-live-through-it/">How to Create a Data Cluster and Live Through It</a>
+    </h1>
+  
 
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>This post originally posted at <a href="http://bit.ly/1v4ycZY" title="BigPanda" target="_blank" rel="external">BigPanda’s Blog</a>, BigPanda is the cool start-up company that I currently work at, you can find more about how it manages alerts and fights the alert fatigue <a href="http://bigpanda.io" title="BigPanda" target="_blank" rel="external">here</a>.</p>
+<p>As the world of software development is moving to <a href="http://bigpanda.io" title="BigPanda" target="_blank" rel="external">BigPanda</a>, ahmm… sorry, I meant Big Data, we need to pay attention to synchronization, and it’s becoming one of the most difficult challenges we face.</p>
+<p>Here at BigPanda, we receive a lot of alerts from <a href="http://bigpanda.io/integrations/" target="_blank" rel="external">many monitoring systems</a>, and naturally we want to keep the data synchronized and consistent. One issue we face is when a server is reported by a monitoring system as <strong>DOWN</strong>, and then, one moment later is reported as <strong>UP</strong>. We need the two events to be processed in relation to the same server and in the correct order, to ensure the status does not end up being <strong>DOWN</strong>.</p>
+<p>
+        
+          <p class="article-more-link">
+            <a href="/2014/06/13/how-to-create-a-data-cluster-and-live-through-it/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://noamsh.com/2014/06/13/how-to-create-a-data-cluster-and-live-through-it/" data-id="r9gjp6mdlt0plvf8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-sqlite-dal-for-android" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/01/04/sqlite-dal-for-android/" class="article-date">
+  <time datetime="2014-01-04T13:34:17.000Z" itemprop="datePublished">04 01 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Android/">Android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/01/04/sqlite-dal-for-android/">Sq Lite Dal for Android</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>While developing for Android I had this feeling that something was missing. In Java, most of the time we use a DAL layer (aka JPA, Hibernate) to access the database, in Android I couldn’t find something appropriate.</p>
+<p>Therefore, in each project that I was involved in, we found ourselves writing a specific DAL layer, that over time was developed to something that could be used by other projects.</p>
+<p>I thought it would be nice to publish it for everyone’s use.</p>
+<p>The project is hosted by github on <a href="https://github.com/noamshemesh/sqlite-orm" title="sqlite-orm" target="_blank" rel="external">https://github.com/noamshemesh/sqlite-orm</a></p>
+<p>Any comments or suggestions are more than welcome! Please reply here or open an issue in github.</p>
+<p>Noam.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://noamsh.com/2014/07/07/hello-world/" data-id="8gzn6ifbrvfen631" class="article-share-link">Share</a>
+      <a data-url="http://noamsh.com/2014/01/04/sqlite-dal-for-android/" data-id="ssa9j5p09k96qd2i" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-google-maps-angular-and-draggable-frame" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/09/20/google-maps-angular-and-draggable-frame/" class="article-date">
+  <time datetime="2013-09-20T11:55:25.000Z" itemprop="datePublished">20 09 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Angularjs/">Angular.js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/09/20/google-maps-angular-and-draggable-frame/">Google Maps, Angular and Draggable Frame</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Probably not the best title for this post, but one image will explain it:</p>
+<p><a href="http://noamshemesh.files.wordpress.com/2013/09/screen-shot-2013-09-20-at-1-54-56-pm.png" target="_blank" rel="external"><img src="http://noamshemesh.files.wordpress.com/2013/09/screen-shot-2013-09-20-at-1-54-56-pm.png?w=300" alt="Screen Shot 2013-09-20 at 1.54.56 PM"></a>Only the markers in the phone are shown, the user can move the phone frame and see others markers.</p>
+<p>The main idea is to create a div that would update angular with its current position (and sizes, if not fixed), and then update the markers on the map to be visible if they are inside the frame, otherwise set them to be invisible.</p>
+<p>
+        
+          <p class="article-more-link">
+            <a href="/2013/09/20/google-maps-angular-and-draggable-frame/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://noamsh.com/2013/09/20/google-maps-angular-and-draggable-frame/" data-id="af6fdr5n7csyqwe4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Draggable-div/">Draggable div</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Google-maps-overlay/">Google maps overlay</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Update-content-with-drag/">Update content with drag</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-login-and-cookies" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/08/30/login-and-cookies/" class="article-date">
+  <time datetime="2013-08-30T08:44:57.000Z" itemprop="datePublished">30 08 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Android/">Android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/08/30/login-and-cookies/">Login and Cookies on Android</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>If you ever tried to work with cookies and Android you know that it isn’t covered well over the net.</p>
+<p>The log-in screen, however, is more covered, there are many templates all over the net, but we couldn’t find a template that covers the flow from A to Z, with cookies and result code handling.</p>
+<p>That’s the motivation. Now for the good part:</p>
+<p>
+        
+          <p class="article-more-link">
+            <a href="/2013/08/30/login-and-cookies/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://noamsh.com/2013/08/30/login-and-cookies/" data-id="n9bl0aec82gemvow" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-intro" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2013/08/24/intro/" class="article-date">
+  <time datetime="2013-08-24T18:33:56.000Z" itemprop="datePublished">24 08 2013</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Angularjs/">Angular.js</a>►<a class="article-category-link" href="/categories/Angularjs/Nodejs/">Node.js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/08/24/intro/">(Node|Angular|Myself) Intro</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Lately I started to work with node.js and Angular.js in two different projects that are in different development stages. This blog is going to be full with many adventures that I’m going through while learning, kind of a journey diary, only with interesting stuff.</p>
+<p>A little about myself: Noam Shemesh, 26, living in Tel Aviv. Between the parties, I’m catching up with the current pulse of the start-up nation.</p>
+<p>To the javascript business: I’ve been over many articles and videos related to node.js and Angular.js, and I thought it would be nice to save some search/watch time to other people.</p>
+<p>
+        
+          <p class="article-more-link">
+            <a href="/2013/08/24/intro/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://noamsh.com/2013/08/24/intro/" data-id="hv7cwa3l5h67w95n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -132,16 +367,28 @@
           <aside id="sidebar">
   
     
-  
-    
-  
-    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Angularjs/">Angular.js</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Angularjs/Nodejs/">Node.js</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Nodejs/">Node.js</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07">July 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Draggable-div/">Draggable div</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-maps-overlay/">Google maps overlay</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Update-content-with-drag/">Update content with drag</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Draggable-div/" style="font-size: NaNpx;">Draggable div</a><a href="/tags/Google-maps-overlay/" style="font-size: NaNpx;">Google maps overlay</a><a href="/tags/Update-content-with-drag/" style="font-size: NaNpx;">Update content with drag</a>
     </div>
   </div>
 
@@ -153,7 +400,23 @@
       <ul>
         
           <li>
-            <a href="/2014/07/07/hello-world/">Hello World</a>
+            <a href="/2014/07/05/integration-coverage-istanbul/">Javascript Integration Tests Coverage With Istanbul</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/13/how-to-create-a-data-cluster-and-live-through-it/">How to Create a Data Cluster and Live Through It</a>
+          </li>
+        
+          <li>
+            <a href="/2014/01/04/sqlite-dal-for-android/">Sq Lite Dal for Android</a>
+          </li>
+        
+          <li>
+            <a href="/2013/09/20/google-maps-angular-and-draggable-frame/">Google Maps, Angular and Draggable Frame</a>
+          </li>
+        
+          <li>
+            <a href="/2013/08/30/login-and-cookies/">Login and Cookies on Android</a>
           </li>
         
       </ul>
@@ -178,7 +441,7 @@
   
     <a href="/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+    <a href="/about" class="mobile-nav-link">About</a>
   
 </nav>
     
