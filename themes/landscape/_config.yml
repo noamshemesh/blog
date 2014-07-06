@@ -1,0 +1,29 @@
+# Header
+menu:
+  Home: /
+  About: /about
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- recent_posts
+
+# Miscellaneous
+google_analytics: UA-52398580-1
+favicon: /favicon.png
+comment_provider: disqus
+twitter:
+  username: noamshemesh
+  show_replies: false
+  tweet_count: 4
+  
+google_plus:
+fb_admins:
+fb_app_id:
