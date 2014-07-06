@@ -89,6 +89,3 @@ exclude_generator:
 deploy:
 - type: heroku
   repo: git@heroku.com:noamsh.git
-- type: github
-  repo: git@github.com:noamshemesh/blog.git
-  branch: master
